@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko">
+	<head>	 				
+		<meta charset="utf-8" />
+		
+		<title>CAFFE PASCUCCI</title>
+		<meta name="author" content="PASCUCCI">
+		<meta name="description" content="기업입니다.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="PASCUCCI">
+		<meta property="og:description" content="기업입니다.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<script type="text/javascript" src="/js/commonJs.min.js?ver=20241104"></script>
+		<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript" src="/js/global.js?ver=20240926"></script>		
+		<script type="text/javascript" src="/js/dev.js"></script>				 
+		<link rel="stylesheet" href="/css/common.css?ver=20241011" />    
+		<link rel="stylesheet" href="/css/global.css?ver=20241111" />   
+	</head>
+
+	<body>
+		<p class="skip"><a href="#container">본문 바로가기</a></p>
+		<section id="wrapper" class="wrapper">
+			<!-- header -->
+			<header  id="header" data-include-file="./inc/top_menu.html" class="header-wrap includeJs">
+			</header>
+			<!-- //header -->
+
+			<div id="container" class="container">
+				<div class="pageNavigation">
+						<div class="naviHome"><a href="/" role="button">HOME</a></div>
+						<span class="naviDep1">News</span>
+						<div class="naviSub">
+							<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">공지사항</button><!-- 클릭 시 true로 변경 -->
+							<ul class="subList">
+							<li><a href="/about/hanmi-pharm/company.hm" role="button">이벤트</a></li>
+						</ul>
+						</div>
+					</div>
+					<form id="form" action="list.hm" method="post">
+						<input type="hidden" id="page" name="page" value="1">
+						<input type="hidden" id="gubun" name="gubun" value="">
+						<input type="hidden" id="searchValue" name="searchValue" value="">
+					</form>
+					<!-- start of contents -->
+					<div id="contents" class="contents">			
+						<div class="contModule topVisual">
+							<div class="contInner">
+
+								<h1 class="titDep01">공지사항<span class="titEnd">.</span></h1>
+							</div>
+						</div>			
+						<div class="contModule contProductNews moduleSearch">
+							<div class="contInner">
+								<div class="searchArea">
+									<input type="text" id="search" name="search"  value="" onkeyup="fnEnterkey()" placeholder="제목 또는 내용을 검색해주세요." title="검색어 입력">
+									<button type="button" class="btnIcon btnSearch" onclick="fnSearch()">검색하기</button>
+									<button type="button" class="btnIcon btnDel">검색어 삭제</button>
+								</div>
+							</div>
+						</div>			
+						<div class="contModule contProductNews">
+							<h2 class="hidden">전체</h2>
+							<div class="contInner" id="inner">
+								<div class="countTxt">전체 : <span class="countCurrent" id="totalCnt">21건</span></div>
+								<div class="board">
+									<div class="boardRow boardHead pc">
+										<div class="boardItem">구분</div>
+										<div class="boardItem title">제목</div>
+										<div class="boardItem">등록일</div>
+										<div class="boardItem">조회수</div>
+									</div>
+									<div class="boardRow boardHead mo">
+										<div class="boardItem">제목</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('342')" class="boardLink"> [공지] 파스쿠찌 원재료 변경에 따른 포장재 사용 안내</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.10.11</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>46</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('322')" class="boardLink">[공지] 개인정보처리방침 변경 공지 (2023년 11월 27일 시행)</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.10.08</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>38</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('261')" class="boardLink"> X-MAS 홀케이크 판매점 안내</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.28</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>72</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('241')" class="boardLink">딸기 밀크 보틀 판매점 안내</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.27</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>64</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting "><em class="hidden">구분</em>21</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('229')" class="boardLink">파스쿠찌 음료별 카페인 함량 안내</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>52</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting "><em class="hidden">구분</em>20</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('228')" class="boardLink">해피포인트 사용 기준 변경 안내</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>23</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting "><em class="hidden">구분</em>19</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('227')" class="boardLink">파스쿠찌 홈페이지 개인정보처리방침 변경 안내 드립니다.</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>17</div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting "><em class="hidden">구분</em>18</div>
+										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('226')" class="boardLink">해피포인트 추가 적립률 변경 안내</a> </div>
+										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
+										<div class="boardItem views"><em class="hidden">조회수</em>12</div>
+									</div>
+								</div>
+						
+						
+								<div class="paginationWrap"> <a href="javascript:;" role="button" class="firstPage" onclick="pageClick(1)">first page</a> <a href="javascript:;" role="button" class="prevPage" onclick="pageClick(1)">prev page</a><a href="javascript:;" role="button" class="pageNum pageNow" title="현재 페이지" onclick="pageClick(1)">1</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(2)">2</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(3)">3</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(4)">4</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(5)">5</a> <a href="javascript:;" role="button" class="nextPage" onclick="pageClick(6)">next page</a> <a href="javascript:;" role="button" class="lastPage" onclick="pageClick(57)">last page</a></div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+		</section>
+		<footer id="footer" data-include-file="./inc/footer.html" class="footer-wrap includeJs">
+		</footer>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
+
+

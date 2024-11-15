@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="ko">
+	<head>	 				
+		<meta charset="utf-8" />
+		
+		<title>CAFFE PASCUCCI</title>
+		<meta name="author" content="PASCUCCI">
+		<meta name="description" content="기업입니다.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="PASCUCCI">
+		<meta property="og:description" content="기업입니다.">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<script type="text/javascript" src="/js/commonJs.min.js?ver=20241104"></script>
+		<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript" src="/js/global.js?ver=20240926"></script>		
+		<script type="text/javascript" src="/js/dev.js"></script>				 
+		<link rel="stylesheet" href="/css/common.css?ver=20241011" />    
+		<link rel="stylesheet" href="/css/global.css?ver=20241111" />   
+	</head>
+
+	<body>
+		<p class="skip"><a href="#container">본문 바로가기</a></p>
+		<section id="wrapper" class="wrapper">
+			<!-- header -->
+			<header  id="header" data-include-file="./inc/top_menu.html" class="header-wrap includeJs">
+			</header>
+			<!-- //header -->
+			<div id="container" class="container">
+				<div class="pageNavigation">
+					<div class="naviHome"><a href="/" role="button">HOME</a></div>
+					<span class="naviDep1">Business</span>
+					<div class="naviSub">
+						<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">Product</button><!-- 클릭 시 true로 변경 -->
+						<ul class="subList">
+							<li><a href="/business/open-Innovation.hm" role="button" aria-current="true">오픈 이노베이션</a></li>
+							<li><a href="/business/cmdo.hm" role="button" aria-current="true">CDMO</a></li>
+							<li><a href="/business/product/finder/list.hm" role="button">Product</a></li>
+						</ul>
+					</div>
+					<div class="naviDep3">
+						<button type="button" class="naviBtDep3" title="3rd depth menu" aria-expanded="false">제품검색</button><!-- 클릭 시 true로 변경 -->
+						<ul class="subList">
+							<li><a href="/business/product/finder/list.hm" role="button" aria-current="true">제품검색</a></li>
+							<li><a href="/business/product/pharmacy/search.hm" role="button">판매약국 찾기</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- start of contents -->
+				<div id="contents" class="contents">
+					<!-- 230804 삭제
+					<h1 class="hidden">제품 검색</h1> -->
+					<div class="contModule topVisual">
+						<div class="contInner">
+							<!-- 230804 헤딩레벨 수정 -->
+							<h1 class="titDep01">
+								<p class="pc">COFFEE<span class="titEnd">.</span></p>
+								<p class="mo">COFFEE<span class="titEnd">.</span></p>
+							</h1>
+						</div>
+					</div>
+					<div class="contModule contProduct moduleSearch">
+						<div class="contInner">
+							 <div class="noData" id="noData" style="display:none;">
+								<p class="noDataTxt">등록된 게시물이 없습니다.</p>
+							</div>
+							<div class="productResult" id="productResult">
+								<ul class="productList" id="productList">
+									<li class="productItem">
+										<a href="#" class="productLink">
+											<figure class="productThumb"><img src="./images/product/이탈리안아포가또_1562 (1).jpg" alt="AT-Patch" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<span class="medicineType ty4">
+													<img src="./images/bg_leaf_left.png" alt="">
+													시그니처
+													<img src="./images/bg_leaf_right.png" alt="">
+												</span>
+												<div class="medicineName">이탈리안 아포가또</div>
+												<span class="medicineEffect">Italian Affogato</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
+							
+									<li class="productItem">
+										<a href="#" class="productLink">
+											<figure class="productThumb"><img src="./images/product/에스프레소_16951_1582.jpg" alt="HANMI COVID-19 Quick TEST" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<span class="medicineType ty4"></span>
+												<div class="medicineName">에스프레소</div>
+												<span class="medicineEffect">Espresso</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
+							
+									<li class="productItem">
+										<a href="javascript:productDetail(6644);" class="productLink">
+											<figure class="productThumb"><img src="/images/product/에스프레소마끼아또_161055_15848.jpg" alt="Kardia Mobile 6L" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<span class="medicineType ty4"></span>
+												<div class="medicineName">에스프레소 마끼아또</div>
+												<span class="medicineEffect">Espresso Macchiato</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
+								</ul>
+								<!-- pagination -->
+							
+								<!-- //pagination -->
+								<div class="paginationWrap"> <a href="javascript:;" role="button" class="firstPage" onclick="pageClick(1)">first page</a> <a href="javascript:;" role="button" class="prevPage" onclick="pageClick(1)">prev page</a>
+									<a href="javascript:;" role="button" class="pageNum pageNow" title="현재 페이지" onclick="pageClick(1)">1</a>
+									 <a href="javascript:;" role="button" class="nextPage" onclick="pageClick(6)">next page</a> <a href="javascript:;" role="button" class="lastPage" onclick="pageClick(44)">last page</a></div>
+							</div>
+						   
+						</div>
+					</div>
+				</div>
+				<!-- // contents -->
+			</div>
+			<!-- //container -->
+			<!-- 검색 필터 popup(모바일) -->
+			<section id="popup-filter" class="layerPopup layerBottom pcHidden" role="dialog" tabindex="0">
+				<div class="popupWrap popupFilter">
+					<h2 class="popupTit">필터</h2>
+					<div class="popupContent">
+						<div class="popupScroll">
+							<div class="searchRow">
+								<span class="filterTit subject">전문과별 검색</span>
+								<ul class="inputWrap selector">
+								  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000014_mo" value="000014" name="searchDepardCodeRadio_mo" data-searchDepardCode="000014"><label for="searchDepardCode_000014_mo">가정의학과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000001_mo" value="000001" name="searchDepardCodeRadio_mo" data-searchDepardCode="000001"><label for="searchDepardCode_000001_mo">내과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000006_mo" value="000006" name="searchDepardCodeRadio_mo" data-searchDepardCode="000006"><label for="searchDepardCode_000006_mo">비뇨기과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000008_mo" value="000008" name="searchDepardCodeRadio_mo" data-searchDepardCode="000008"><label for="searchDepardCode_000008_mo">산부인과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000005_mo" value="000005" name="searchDepardCodeRadio_mo" data-searchDepardCode="000005"><label for="searchDepardCode_000005_mo">소아과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000013_mo" value="000013" name="searchDepardCodeRadio_mo" data-searchDepardCode="000013"><label for="searchDepardCode_000013_mo">신경과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000009_mo" value="000009" name="searchDepardCodeRadio_mo" data-searchDepardCode="000009"><label for="searchDepardCode_000009_mo">안과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000002_mo" value="000002" name="searchDepardCodeRadio_mo" data-searchDepardCode="000002"><label for="searchDepardCode_000002_mo">외과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000010_mo" value="000010" name="searchDepardCodeRadio_mo" data-searchDepardCode="000010"><label for="searchDepardCode_000010_mo">이비인후과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000015_mo" value="000015" name="searchDepardCodeRadio_mo" data-searchDepardCode="000015"><label for="searchDepardCode_000015_mo">일반의원</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000011_mo" value="000011" name="searchDepardCodeRadio_mo" data-searchDepardCode="000011"><label for="searchDepardCode_000011_mo">정신건강의학과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000007_mo" value="000007" name="searchDepardCodeRadio_mo" data-searchDepardCode="000007"><label for="searchDepardCode_000007_mo">치과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000003_mo" value="000003" name="searchDepardCodeRadio_mo" data-searchDepardCode="000003"><label for="searchDepardCode_000003_mo">피부과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000236_mo" value="000236" name="searchDepardCodeRadio_mo" data-searchDepardCode="000236"><label for="searchDepardCode_000236_mo">혈액종양내과</label></li>
+										  
+										  <li class="radio"><input type="radio" id="searchDepardCode_000237_mo" value="000237" name="searchDepardCodeRadio_mo" data-searchDepardCode="000237"><label for="searchDepardCode_000237_mo">호흡기내과</label></li>
+										  
+								</ul>
+							</div>
+							<div class="searchRow">
+								<span class="filterTit initial">초성 검색</span>
+								<ul class="inputWrap selector small">
+											   <li class="radio"><input type="radio" id="initial01_mo" name="searchFirstCharRadio_mo" value="ㄱ" data-searchFirstChar="ㄱ"><label for="initial01_mo">ㄱ</label></li>
+											<li class="radio"><input type="radio" id="initial03_mo" name="searchFirstCharRadio_mo" value="ㄴ" data-searchFirstChar="ㄴ"><label for="initial03_mo">ㄴ</label></li>
+											<li class="radio"><input type="radio" id="initial04_mo" name="searchFirstCharRadio_mo" value="ㄷ" data-searchFirstChar="ㄷ"><label for="initial04_mo">ㄷ</label></li>
+											<li class="radio"><input type="radio" id="initial06_mo" name="searchFirstCharRadio_mo" value="ㄹ" data-searchFirstChar="ㄹ"><label for="initial06_mo">ㄹ</label></li>
+											<li class="radio"><input type="radio" id="initial07_mo" name="searchFirstCharRadio_mo" value="ㅁ" data-searchFirstChar="ㅁ"><label for="initial07_mo">ㅁ</label></li>
+											<li class="radio"><input type="radio" id="initial08_mo" name="searchFirstCharRadio_mo" value="ㅂ" data-searchFirstChar="ㅂ"><label for="initial08_mo">ㅂ</label></li>
+											<li class="radio"><input type="radio" id="initial10_mo" name="searchFirstCharRadio_mo" value="ㅅ" data-searchFirstChar="ㅅ"><label for="initial10_mo">ㅅ</label></li>
+											<li class="radio"><input type="radio" id="initial12_mo" name="searchFirstCharRadio_mo" value="ㅇ" data-searchFirstChar="ㅇ"><label for="initial12_mo">ㅇ</label></li>
+											<li class="radio"><input type="radio" id="initial13_mo" name="searchFirstCharRadio_mo" value="ㅈ" data-searchFirstChar="ㅈ"><label for="initial13_mo">ㅈ</label></li>
+											<li class="radio"><input type="radio" id="initial15_mo" name="searchFirstCharRadio_mo" value="ㅊ" data-searchFirstChar="ㅊ"><label for="initial15_mo">ㅊ</label></li>
+											<li class="radio"><input type="radio" id="initial16_mo" name="searchFirstCharRadio_mo" value="ㅋ" data-searchFirstChar="ㅋ"><label for="initial16_mo">ㅋ</label></li>
+											<li class="radio"><input type="radio" id="initial17_mo" name="searchFirstCharRadio_mo" value="ㅌ" data-searchFirstChar="ㅌ"><label for="initial17_mo">ㅌ</label></li>
+											<li class="radio"><input type="radio" id="initial18_mo" name="searchFirstCharRadio_mo" value="ㅍ" data-searchFirstChar="ㅍ"><label for="initial18_mo">ㅍ</label></li>
+											<li class="radio"><input type="radio" id="initial19_mo" name="searchFirstCharRadio_mo" value="ㅎ" data-searchFirstChar="ㅎ"><label for="initial19_mo">ㅎ</label></li>
+								</ul>
+							</div>
+							<div class="searchRow">
+								<span class="filterTit medicine">제제별 검색</span>
+								<ul class="inputWrap selector">
+								 
+											<li class="radio"><input type="radio" id="medicine_1_mo" name="searchCategoryRadio_mo" value="전문의약품" data-searchCategory="전문의약품"><label for="medicine_1_mo">전문의약품</label></li>
+											
+											<li class="radio"><input type="radio" id="medicine_2_mo" name="searchCategoryRadio_mo" value="일반의약품" data-searchCategory="일반의약품"><label for="medicine_2_mo">일반의약품</label></li>
+											
+											<li class="radio"><input type="radio" id="medicine_3_mo" name="searchCategoryRadio_mo" value="의료기기" data-searchCategory="의료기기"><label for="medicine_3_mo">의료기기</label></li>
+											
+											<li class="radio"><input type="radio" id="medicine_4_mo" name="searchCategoryRadio_mo" value="건강기능식품" data-searchCategory="건강기능식품"><label for="medicine_4_mo">건강기능식품</label></li>
+											
+											<li class="radio"><input type="radio" id="medicine_5_mo" name="searchCategoryRadio_mo" value="기타" data-searchCategory="기타"><label for="medicine_5_mo">기타</label></li>
+											
+								</ul>
+							</div>
+							<a href="http://www.health.kr/searchIdentity/search.asp" class="btnMedicineLook" target="_blank"  title="새창 열림" >외형별 검색</a>
+						</div>
+					</div>
+					<div class="popupBtnWrap">
+						<button type="reset" class="btnIcon btnFilterReset2" onclick="searchInit()">초기화</button>
+						<button type="button" class="popupClose">팝업 닫기</button>
+					</div>
+	
+				</div>
+			</section>
+			<form id="productDetail" method="post">
+				<input type="hidden" id="prodSeq" name="prodSeq">
+				<input type="hidden" id="page" name="page">
+				<input type="hidden" id="productDetailSearchWord" name="searchWord">
+				<input type="hidden" id="productDetailSearchDepardCode" name="searchDepardCode">
+				<input type="hidden" id="productDetailSearchFirstChar" name="searchFirstChar">
+				<input type="hidden" id="productDetailSearchCategory" name="searchCategoryWord">
+			</form>
+			<form id="findPharmacy" method="post">
+				<input type="hidden" id="productNm" name="productNm">
+			</form>
+			<!-- //검색 필터 popup(모바일) -->
+			<script>
+			var init_page =0;
+			var totalPage =0;
+			var page =1;
+			function search(){
+				pageClick(1);
+			}
+			
+			function productDetail(prodSeq){
+				
+				var searchDepardCode ="";
+				if($("input:radio[name='searchDepardCodeRadio']:checked").length > 0){
+					searchDepardCode=$("input:radio[name='searchDepardCodeRadio']:checked").val();
+				}
+				var searchFirstChar ="";
+				if($("input:radio[name='searchFirstCharRadio']:checked").length > 0){
+					searchFirstChar=$("input:radio[name='searchFirstCharRadio']:checked").val();
+				}
+				var searchCategory ="";
+				if($("input:radio[name='searchCategoryRadio']:checked").length > 0){
+					searchCategory=$("input:radio[name='searchCategoryRadio']:checked").val();
+				}
+				var searchWord = $("#searchWord").val();
+				
+				$("#page").val(page);
+				$("#productDetailSearchWord").val(searchWord);
+				$("#productDetailSearchDepardCode").val(searchDepardCode);
+				$("#productDetailSearchFirstChar").val(searchFirstChar);
+				$("#productDetailSearchCategory").val(searchCategory);
+				
+				$("#prodSeq").val(prodSeq);
+				$("#productDetail").attr("action","/business/product/finder/detail-"+prodSeq+".hm");
+				$("#productDetail").submit();
+			}
+			function findPharmacy(productNm){
+				$("#productNm").val(productNm);
+				$("#findPharmacy").attr("action","/business/product/pharmacy/search.hm");
+				$("#findPharmacy").submit();
+			}
+			function pageClick(page){
+				var searchDepardCode ="";
+				if($("input:radio[name='searchDepardCodeRadio']:checked").length > 0){
+					searchDepardCode=$("input:radio[name='searchDepardCodeRadio']:checked").val();
+				}
+				var searchFirstChar ="";
+				if($("input:radio[name='searchFirstCharRadio']:checked").length > 0){
+					searchFirstChar=$("input:radio[name='searchFirstCharRadio']:checked").val();
+				}
+				var searchCategory ="";
+				if($("input:radio[name='searchCategoryRadio']:checked").length > 0){
+					searchCategory=$("input:radio[name='searchCategoryRadio']:checked").val();
+				}
+				var searchWord = $("#searchWord").val();
+				
+				history.pushState({page:page,searchWord:searchWord,searchDepardCode:searchDepardCode,searchFirstChar:searchFirstChar,searchCategory:searchCategory}, "제품 검색 | Hanmi", "");
+				
+				goPage(page,searchWord,searchDepardCode,searchFirstChar,searchCategory);
+			}
+			function goPage(page_val,searchWord,searchDepardCode,searchFirstChar,searchCategory){
+				page=page_val;
+				$.post("./listAjax.hm",
+				{	
+					searchWord:searchWord,
+					searchDepardCode:searchDepardCode,
+					searchFirstChar:searchFirstChar,
+					searchCategoryWord:searchCategory,
+					page:page_val
+				},
+				function(data){
+					if(data.is_ok=="ok"){
+						var size=data.totalcount;
+						var list=data.list;
+						$("#productListCount").html(size+"개")
+						if(size>0){
+							$("#noData").hide();
+							$("#productResult").show();
+							$("#productList").html("");
+							$(".paginationWrap").remove();
+							for(var i=0;i<data.list.length;i++){
+								var arr = data.list[i].sysFileNm.split("|");
+								data.list[i].sysFile=arr[arr.length-1];
+								if(data.list[i].sysFile == ''){
+									data.list[i].sysFile = 'img_symbol.jpg';
+								}
+								$("#productList").append(makeHtml("productListhtml",data.list[i]));
+							}
+							$("#productResult").append(data.pagingStr);
+							
+						}else{
+							$("#noData").show();
+							$("#productResult").hide();
+						}
+					}
+					
+				},"json");
+			}
+			function searchInit(){
+				$("input:radio[name='searchFirstCharRadio_mo']").each(function(i,ob){
+					$(ob).prop("checked",false);
+				});
+				$("input:radio[name='searchFirstCharRadio']").each(function(i,ob){
+					$(ob).prop("checked",false);
+				});
+				$("input:radio[name='searchDepardCodeRadio_mo']").each(function(i,ob){
+					$(ob).prop("checked",false);
+				});
+				$("input:radio[name='searchDepardCodeRadio']").each(function(i,ob){
+					$(ob).prop("checked",false);
+				});
+				$("input:radio[name='searchCategoryRadio_mo']").each(function(i,ob){
+					$(ob).prop("checked",false);
+				});
+				$("input:radio[name='searchCategoryRadio']").each(function(i,ob){
+					$(ob).prop("checked",false);
+				});
+				//$("#searchWord").val("");
+				search();
+			}
+			$(document).ready(function(event) {
+				$("input:radio[name='searchFirstCharRadio_mo']").click(function(e){
+					var val=$("input:radio[name='searchFirstCharRadio_mo']:checked").val();
+					$("[data-searchFirstChar='"+val+"']").prop("checked",true);
+					search();
+				});
+				$("input:radio[name='searchFirstCharRadio']").click(function(e){
+					var val=$("input:radio[name='searchFirstCharRadio']:checked").val();
+					$("[data-searchFirstChar='"+val+"']").prop("checked",true);
+					search();
+					
+				});
+				
+				$("input:radio[name='searchDepardCodeRadio_mo']").click(function(e){
+					var val=$("input:radio[name='searchDepardCodeRadio_mo']:checked").val();
+					$("[data-searchDepardCode='"+val+"']").prop("checked",true);
+					search();
+					
+				});
+				$("input:radio[name='searchDepardCodeRadio']").click(function(e){
+					var val=$("input:radio[name='searchDepardCodeRadio']:checked").val();
+					$("[data-searchDepardCode='"+val+"']").prop("checked",true);
+					search();
+					
+				});
+				$("input:radio[name='searchCategoryRadio_mo']").click(function(e){
+					var val=$("input:radio[name='searchCategoryRadio_mo']:checked").val();
+					$("[data-searchCategory='"+val+"']").prop("checked",true);
+					search();
+					
+				});
+				$("input:radio[name='searchCategoryRadio']").click(function(e){
+					var val=$("input:radio[name='searchCategoryRadio']:checked").val();
+					$("[data-searchCategory='"+val+"']").prop("checked",true);
+					search();
+					
+				});
+				$("#searchWord").keyup(function(event){
+					var keyCode=event.keyCode?event.keyCode:event.which;
+					if(keyCode==13){
+						search();
+					}
+				});
+				
+					search();
+				
+				
+			});
+			/** 검색 뒤로가기
+			*/
+			$(window).on('popstate', function(event) {
+				  var data = event.originalEvent.state;
+				  if(data != null){
+					  $("#searchWord").val(data.searchWord);
+					  $("[data-searchFirstChar='"+data.searchFirstChar+"']").prop("checked",true);
+					  $("[data-searchDepardCode='"+data.searchDepardCode+"']").prop("checked",true);
+					  $("[data-searchCategory='"+data.searchCategory+"']").prop("checked",true);
+					  goPage(data.page,data.searchWord,data.searchDepardCode,data.searchFirstChar,data.searchCategory);
+				  }
+			});
+			</script>
+				<script>
+				/**
+				* 개발 공통에 해당되는  스크립트 펑션 영역
+				*/
+				//쿠키 핸들링
+				function setCookie(cookie_name, value, days) {
+					  var exdate = new Date();
+					  exdate.setDate(exdate.getDate() + days);
+					  // 설정 일수만큼 현재시간에 만료값으로 지정
+	
+					  var cookie_value = escape(value) + ((days == null) ? '' : '; expires=' + exdate.toUTCString());
+					  document.cookie = cookie_name + '=' + cookie_value;
+				}
+				function getCookie(cookie_name) {
+					  var x, y;
+					  var val = document.cookie.split(';');
+	
+					  for (var i = 0; i < val.length; i++) {
+						x = val[i].substr(0, val[i].indexOf('='));
+						y = val[i].substr(val[i].indexOf('=') + 1);
+						x = x.replace(/^\s+|\s+$/g, ''); // 앞과 뒤의 공백 제거하기
+						if (x == cookie_name) {
+						  return unescape(y); // unescape로 디코딩 후 값 리턴
+						}
+					  }
+				}
+				//쿠키 핸들링
+				//html 바인드 
+				function loadTemplate(id) { return document.getElementById(id).innerHTML;}
+				function replaceTemplate(templateStr, data) {
+					var result = templateStr;
+					for (var key in data) {
+						var pattern = new RegExp("{"+key+"}","g");
+						result = result.replace(pattern, data[key]);
+					}
+					return result;
+				}
+				//html 바인드 
+				function makeHtml(id,data){
+					return replaceTemplate(loadTemplate(id),data);
+				}			
+				</script>
+			  <script id=productPharmacyListhtml type="text/template">
+								<li class="productItem">
+										<a href="javascript:productDetail({prodSeq});" class="productLink">
+											<figure class="productThumb"><img src="https://common.hanmi.co.kr/upfile/ces/product/{sysFile}" alt="{prodNm}" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<span class="medicineType {upperCtgrType}">{upperCtgrNm}</span>
+												<div class="medicineName">{prodNm}</div>
+												<span class="medicineEffect">{ctgrNm}</span><!-- 호버 시 노출 -->
+											</div>
+	
+										</a>
+										<a href="javascript:findPharmacy('{prodNm}')" class="btnIcon btnPharmacySearch">판매약국 찾기</a><!-- 등록된 판매 약국 찾기가 있는 경우에만 노출됨 -->
+								</li>
+			  </script>
+			  <script id=productListhtml type="text/template">
+								<li class="productItem">
+										<a href="javascript:productDetail({prodSeq});" class="productLink">
+											<figure class="productThumb"><img src="https://common.hanmi.co.kr/upfile/ces/product/{sysFile}" alt="{prodNm}" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<span class="medicineType {upperCtgrType}">{upperCtgrNm}</span>
+												<div class="medicineName">{prodNm}</div>
+												<span class="medicineEffect">{ctgrNm}</span><!-- 호버 시 노출 -->
+											</div>
+	
+										</a>
+								</li>
+			  </script>
+			  
+	<script>
+	<!--
+	var timer;
+	
+	function debounce(func, timeout=500) {
+		clearTimeout(timer);
+		timer = setTimeout(function(){
+			func();
+		}, timeout);
+	}
+		
+	function searchProducts(product) {
+		$.ajax({
+			url: `https://api.example.com/products?search=`,
+			method: 'GET',
+			success: function (data) {
+				displayProducts(data);
+			},
+			error: function (err) {
+				console.error('Error fetching products:', err);
+			}
+		});
+	}
+	
+	function displayProducts(products) {
+		const $productList = $("#product-list");
+		$productList.empty();
+		
+		if (products.length === 0) {
+			$productList.hide();
+			return;
+		}
+	
+		products.forEach(function (product) {
+			const option = $("<option></option>").text(product.name).val(product.id);
+			$productList.append(option);
+		});
+	
+		$productList.show();
+	}
+	
+	function handleInput() {
+		var searchWord = $("#searchWord").val().trim();
+		if (searchWord.length >= 2) {
+			//searchProducts(searchWord);
+		} else {
+			//$("#product-list").hide();
+		}
+	}
+	
+	$("#searchWord").on("keyup", function() {
+		debounce(function() {
+			handleInput();
+		});
+	 });
+	
+	$("#product-list").on("change", function () {
+		const selectedProduct = $("#product-list option:selected").text();
+		$("#search").val(selectedProduct);
+		$("#product-list").hide();
+	});
+	-->
+	</script>
+
+		</section>
+		<footer id="footer" data-include-file="./inc/footer.html" class="footer-wrap includeJs">
+		</footer>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
+
+
