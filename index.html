@@ -24,7 +24,260 @@
 		<p class="skip"><a href="#container">본문 바로가기</a></p>
 		<section id="wrapper" class="wrapper">
 		<!-- header -->
-		<header  id="header" data-include-file="./inc/top_menu.html" class="header-wrap includeJs">
+		<header >
+			<div class="headInner">
+				<a href="/" class="topLogo" title="CAFFE PASCUCCI"></a>
+				<button type="button" class="btnIcon btnBack" onclick="javascript:history.back();">뒤로가기</button>
+				<nav class="nav">
+					<!-- 현재 페이지가 속한 대메뉴에 moveOn 클래스 추가 -->
+					<ul>
+						<li>
+							<a href="/espressobar.html" class="gnb01 ">
+								<span class="txtItem">ESPRESSO BAR</span>
+								<span class="moveWrap">
+								</span>
+							</a>
+							<ul>
+								<li><a href="/espressobar.html">ESPRESSO BAR</a></li>
+								<li><a href="/centro">CENTRO</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/about.html" class="gnb02 ">
+								<span class="txtItem">CAFFE PASCUCCI</span>
+								<span class="moveWrap">
+								</span>
+							</a>
+							<ul>
+								<li>
+									<a href="/about.html">브랜드 소개</a>
+									<ul>
+										<li><a href="/about.html">전통과 전통의 만남</a></li>
+										<li><a href="#">한국파스쿠찌</a></li>
+										<li><a href="#">이탈리아파스쿠찌</a></li>
+									</ul>
+								</li>
+								<li><a href="#">커피 & 컬쳐</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="/product.html" class="gnb03 ">
+								<span class="txtItem">MENU</span>
+								<span class="moveWrap">
+								</span>
+							</a>
+							<ul>
+								<li>
+									<a href="/product.html">COFFEE</a>
+									<ul>
+										<li><a href="/product.html">Italian coffee</a></li>
+										<li><a href="#">Coffee Variation(Hot)</a></li>
+										<li><a href="#">Coffee Variation(Iced)</a></li>
+										<li><a href="#">Cold Brew</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">BEVERAGE</a>
+									<ul>
+										<li><a href="#">Seasonal</a></li>
+										<li><a href="#">Italian Granita</a></li>
+										<li><a href="#">Tea</a></li>
+										<li><a href="#">Others</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">GELATO</a>
+									<ul>
+										<li><a href="#">Italian Gelato</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">FOOD</a>
+									<ul>
+										<li><a href="#">Cake</a></li>
+										<li><a href="#">ltalian Deli</a></li>
+										<li><a href="#">Bakery</a></li>
+										<li><a href="#">Dessert</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">MD</a>
+									<ul>
+										<li><a href="#">Bean</a></li>
+										<li><a href="#">Tumbler</a></li>
+										<li><a href="#">Mug</a></li>
+										<li><a href="#">Coffee Tool</a></li>
+										<li><a href="#">Tea</a></li>
+										<li><a href="#">Others</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="/news.html" class="gnb04 ">
+								<span class="txtItem">NEWS</span>
+								<span class="moveWrap" aria-hidden="true">
+								</span>
+							</a>
+							<ul>
+								<li><a href="/news.html">공지사항</a></li>
+								<li><a href="#">이벤트</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="gnb05 ">
+								<span class="txtItem">STORE</span>
+								<span class="moveWrap" aria-hidden="true">
+								</span>
+							</a>
+							<ul>
+								<li><a href="#">매장안내</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="headUtils">		
+					<div class="slidedown selectLang" data-options='{
+						"animation": true,
+						"animationSpeed":0.2,
+						"direction": "down"
+					}'>
+						<div class="slidedownTitle">
+							<button type="button" class="slidedownBtn" aria-expanded="false" title="사이트 언어 선택">KOR<span data-text='{"text":"close|open", "show":2}'>open</span></button>
+						</div>
+						<div class="slidedownCont" aria-hidden="true">
+							<ul class="siteLanguage">
+								<li><a href="#" target="_blank" title="새창 열림">ENG</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- button.btnMenuOpen 버튼 클릭 시 open 클래스 추가 -->
+					<div class="menuWrap">
+						<!-- 클릭 시 aria-expanded="true" 변경 -->
+						<button type="button" class="btnMenuOpen" aria-haspopup="true" aria-expanded="false" aria-label="Menu Open"></button>
+						<!-- 클릭 시 aria-hidden="false" 변경 -->
+						<div class="menu" aria-hidden="true">
+							<div class="menuHeader">
+								<a href="/" class="topLogo" title="Hanmi Pharm"></a>
+								<div class="headUtils">
+									<div class="slidedown selectLang" data-options='{
+										"direction": "down"
+									}'>
+										<div class="slidedownTitle">
+											<button type="button" class="slidedownBtn" aria-expanded="false" title="사이트 언어 선택">KOR<span data-text='{"text":"close|open", "show":2}'>open</span></button>
+										</div>
+										<div class="slidedownCont" aria-hidden="true">
+											<ul class="siteLanguage">
+												<li><a href="#" target="_blank" title="새창 열림">ENG</a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- 클릭 시 메뉴 닫힘
+										body의 menuOn 클래스 삭제
+										div.menuWrap의 open 클래스 삭제
+										button.btnMenuOpen의 aria-expanded 속성 false 변경
+										div.menu의 aria-hidden 속성 true 변경
+									-->
+									<button type="button" class="btnMenuClose" aria-label="Menu Close"></button>
+								</div>
+							</div>
+							<div class="inner">
+								<nav class="menuNav">
+									<ul class="menuDepth1">
+										<!-- 클릭하면 active 클래스 추가 -->
+										<li class="">
+											<button type="button">Espresso Bar</button>
+											<ul class="menuDepth2">
+												<li class="inDepth"><a href="/espressobar.html">Espresso Bar</a>
+												</li>
+												<li class="inDepth">
+													<a href="#">Centro</a>
+												</li>
+											</ul>
+										</li>
+										<li class="">
+											<button type="button">Caffe Pascucci</button>
+											<ul class="menuDepth2">
+												<li class="inDepth"><a href="/about.html">브랜드 소개</a>
+													<ul class="menuDepth3">
+														<li><a href="/about.html">전통과 전통의 만남</a></li>
+														<li><a href="#">한국파스쿠찌</a></li>
+														<li><a href="#">이탈리아 파스쿠찌</a></li>		
+													</ul>
+												</li>
+												<li class="inDepth"><a href="#">커피 & 컬쳐 </a>
+												</li>
+											</ul>
+										</li>
+										<li class="">
+											<button type="button">Menu</button>
+											<ul class="menuDepth2">
+												<li class="inDepth"><a href="#">Coffee</a>
+													<ul class="menuDepth3">
+														<li><a href="#">Italian coffee</a></li>
+														<li><a href="#">Coffee Variation(Hot)</a></li>
+														<li><a href="#">Coffee Variation(Iced)</a></li>
+														<li><a href="#">Cold Brew</a></li>
+													</ul>
+												</li>
+												<li class="inDepth"><a href="#">Beverage</a>
+													<ul class="menuDepth3">
+														<li><a href="#">Seasonal</a></li>
+														<li><a href="#">Italian Granita</a></li>
+														<li><a href="#">Tea</a></li>
+														<li><a href="#">Others</a></li>
+													</ul>
+												</li>
+												<li class="inDepth"><a href="#">Gelato</a>
+													<ul class="menuDepth3">
+														<li><a href="#">Italian Gelato</a></li>
+													</ul>
+												</li>
+												<li class="inDepth"><a href="#">Food</a>
+													<ul class="menuDepth3">
+														<li><a href="#">Cake</a></li>
+														<li><a href="#">ltalian Deli</a></li>
+														<li><a href="#">Bakery</a></li>
+														<li><a href="#">Dessert</a></li>
+													</ul>
+												</li>
+												<li class="inDepth"><a href="#">MD</a>
+													<ul class="menuDepth3">
+														<li><a href="#">Bean</a></li>
+														<li><a href="#">Tumbler</a></li>
+														<li><a href="#">Mug</a></li>
+														<li><a href="#">Coffee Tool</a></li>
+														<li><a href="#">Tea</a></li>
+														<li><a href="#">Others</a></li>
+													</ul>
+												</li>
+											</ul>
+											
+										</li>
+										<li class="">
+											<button type="button">News</button>
+											<ul class="menuDepth2">
+												<li><a href="/news.html">공지사항</a></li>			
+												<li><a href="#">이벤트</a></li>
+											</ul>
+										</li>
+										<li class="">
+											<button type="button">Store</button>
+											<ul class="menuDepth2">
+												<li><a href="#" >매장안내</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+								<div class="menuFooter">
+									<p class="copyright">&copy;PASCUCCI.Co.,Ltd. All Rights Reserved.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
 		</header>
 		<!-- //header -->
 		<!-- POP -->
