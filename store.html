@@ -39,7 +39,7 @@
 								</a>
 								<ul>
 									<li><a href="/espressobar.html">ESPRESSO BAR</a></li>
-									<li><a href="/centro.html">CENTRO</a></li>
+									<li><a href="/centro">CENTRO</a></li>
 								</ul>
 							</li>
 							<li>
@@ -125,13 +125,13 @@
 								</ul>
 							</li>
 							<li>
-								<a href="/store.html" class="gnb05 ">
+								<a href="#" class="gnb05 ">
 									<span class="txtItem">STORE</span>
 									<span class="moveWrap" aria-hidden="true">
 									</span>
 								</a>
 								<ul>
-									<li><a href="/store.html">매장안내</a></li>
+									<li><a href="#">매장안내</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -265,7 +265,7 @@
 											<li class="">
 												<button type="button">Store</button>
 												<ul class="menuDepth2">
-													<li><a href="/store.html" >매장안내</a></li>
+													<li><a href="#" >매장안내</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -280,118 +280,148 @@
 				</div>
 			</header>
 			<!-- //header -->
-
 			<div id="container" class="container">
 				<div class="pageNavigation">
-						<div class="naviHome"><a href="/" role="button">HOME</a></div>
-						<span class="naviDep1">News</span>
-						<div class="naviSub">
-							<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">공지사항</button><!-- 클릭 시 true로 변경 -->
-							<ul class="subList">
-							<li><a href="/about/hanmi-pharm/company.hm" role="button">이벤트</a></li>
-						</ul>
-						</div>
+					<div class="naviHome"><a href="/" role="button">HOME</a></div>
+					<span class="naviDep1">STORE</span>
+					<div class="naviSub">
+						<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">매장찾기</button><!-- 클릭 시 true로 변경 -->
 					</div>
-					<form id="form" action="list.hm" method="post">
-						<input type="hidden" id="page" name="page" value="1">
-						<input type="hidden" id="gubun" name="gubun" value="">
-						<input type="hidden" id="searchValue" name="searchValue" value="">
-					</form>
-					<!-- start of contents -->
-					<div id="contents" class="contents">			
-						<div class="contModule topVisual">
-							<div class="contInner">
-
-								<h1 class="titDep01">공지사항<span class="titEnd">.</span></h1>
+				</div>
+				<form id="form" action="list.hm" method="post">
+					<input type="hidden" id="page" name="page" value="1">
+					<input type="hidden" id="category" name="category" value="">
+					<input type="hidden" id="searchValue" name="searchValue" value="">
+				</form>
+				<!-- start of contents -->
+				<div id="contents" class="contents">
+							<!-- 230804 삭제
+							<h1 class="hidden">IR</h1> -->
+							<div class="contModule topVisual">
+								<div class="contInner">
+									<h1 class="titDep01">매장안내<span class="titEnd">.</span></h1>
+								</div>
 							</div>
-						</div>	
-						<div class="contModule contProductNews moduleSearch contIr bgGray ">
+							<!-- tab -->
+					<div class="jsTab tabType01" style="margin-top: 0;">
+						<div class="contModule contIr bgGray moduleSearch">
 							<div class="contInner">
-								<div class="searchArea ">
-									<input type="text" id="search" name="search"  value="" onkeyup="fnEnterkey()" placeholder="제목 또는 내용을 검색해주세요." title="검색어 입력">
-									<button type="button" class="btnIcon btnSearch" onclick="fnSearch()">검색하기</button>
+								<div class="searchArea">
+									<input type="text" id="search" name="search"  value="" onkeyup="fnEnterkey()" placeholder="매장명 또는 주소를 검색해주세요." title="검색어 입력">
+									<button type="button" class="btnIcon btnSearch"onclick="fnSearch()">검색하기</button>
 									<button type="button" class="btnIcon btnDel">검색어 삭제</button>
 								</div>
 							</div>
-						</div>	
-						<div class=" jsTab tabType01">
-							<ul class="tabType" role="tablist">
-								<li role="presentation" class="active"><button type="button" aria-selected="true" role="tab">공지사항</button></li>
-								<li role="presentation"><button type="button" aria-selected="false" onclick="location.href='/about/investor-relations/ir/financial-result/list.hm'" role="tab">이벤트</button></li>
-							</ul>
-						</div>		
-						<div class="contModule contProductNews">
-							<h2 class="hidden">전체</h2>
+						</div>
+						<div class="contModule contIr">
 							<div class="contInner" id="inner">
-								<div class="countTxt">전체 : <span class="countCurrent" id="totalCnt">21건</span></div>
-								<div class="board">
-									<div class="boardRow01 boardHead pc">
-										<div class="boardItem">구분</div>
-										<div class="boardItem title">제목</div>
-										<div class="boardItem">등록일</div>
-										<div class="boardItem">조회수</div>
+								<div class="irTop">
+									<div class="inputWrap selector">
+										<span  class="radio"><input type="radio" id="ir-list01" name="listCategory" value="" checked onclick="fnChangeTab()"><label for="ir-list01">주차가능</label></span>
+										<span  class="radio"><input type="radio" id="ir-list02" name="listCategory" value="DATA"  onclick="fnChangeTab()"><label for="ir-list02">24시매장</label></span>
+										<span  class="radio"><input type="radio" id="ir-list03" name="listCategory" value="STOCK"  onclick="fnChangeTab()"><label for="ir-list03">드라이브스루</label></span>
+										<span  class="radio"><input type="radio" id="ir-list04" name="listCategory" value="STOCK"  onclick="fnChangeTab()"><label for="ir-list04">케이터링</label></span>
+										<span  class="radio"><input type="radio" id="ir-list05" name="listCategory" value="STOCK" onclick="fnChangeTab()"><label for="ir-list05">신규오픈</label></span>
 									</div>
-									<div class="boardRow01 boardHead mo">
-										<div class="boardItem">제목</div>
+									<div class="countTxt">전체 <span class="countCurrent" id="totalCnt">486</span>개</div>
+								</div>
+								<!-- 전체 -->
+								<h3 class="hidden" id="h3">전체</h3><!-- 230809 element 추가: 선택된 라디오버튼에 따라 텍스트 변경 필요 -->
+								<div class="board irBoard" id="irBoad">
+									<div class="boardRow boardHead pc">
+										<div class="boardItem">번호</div>
+										<div class="boardItem title">지점명</div>
+										<div class="boardItem">지역</div>
+										<div class="boardItem">주소</div>
+										<div class="boardItem">연락처</div>
+										<div class="boardItem">상세정보</div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('342')" class="boardLink"> [공지] 파스쿠찌 원재료 변경에 따른 포장재 사용 안내</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.10.11</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>46</div>
+									<div class="boardRow boardHead mo">
+										<div class="boardItem">번호</div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('322')" class="boardLink">[공지] 개인정보처리방침 변경 공지 (2023년 11월 27일 시행)</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.10.08</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>38</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">486</div>
+										<div class="boardItem title"><a href="#">아산탕정역점</a> </div>
+										<div class="boardItem register">충청남도</div>
+										<div class="boardItem">충청남도 아산시 탕정면 한들물빛6로 26, 1층</div>
+										<div class="boardItem">	041.545.8883</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('261')" class="boardLink"> X-MAS 홀케이크 판매점 안내</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.28</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>72</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">485</div>
+										<div class="boardItem title"><a href="#">파주봉일천DI점</a> </div>
+										<div class="boardItem register">경기도</div>
+										<div class="boardItem">경기도 파주시 조리읍 등원리 409-25</div>
+										<div class="boardItem">031.943.8188</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting sortingType02"><em class="hidden">구분</em>공지</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('241')" class="boardLink">딸기 밀크 보틀 판매점 안내</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.27</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>64</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">484</div>
+										<div class="boardItem title"><a href="#">정안알밤휴게소(천안)</a> </div>
+										<div class="boardItem register">충청남도</div>
+										<div class="boardItem">충남 공주시 정안면 논산천안고속도로 58</div>
+										<div class="boardItem">	041.545.8883</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting "><em class="hidden">구분</em>21</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('229')" class="boardLink">파스쿠찌 음료별 카페인 함량 안내</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>52</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">483</div>
+										<div class="boardItem title"><a href="#">정안알밤휴게소(논산)</a> </div>
+										<div class="boardItem register">충청남도</div>
+										<div class="boardItem">공주시 정안면 논산천안고속도로 57</div>
+										<div class="boardItem">	041.545.8883</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting "><em class="hidden">구분</em>20</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('228')" class="boardLink">해피포인트 사용 기준 변경 안내</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>23</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">482</div>
+										<div class="boardItem title"><a href="#">일광이동항점</a> </div>
+										<div class="boardItem register">부산</div>
+										<div class="boardItem">부산광역시 기장군 일광읍 이천리 266-1</div>
+										<div class="boardItem">051.723.8497</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting "><em class="hidden">구분</em>19</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('227')" class="boardLink">파스쿠찌 홈페이지 개인정보처리방침 변경 안내 드립니다.</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>17</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">481</div>
+										<div class="boardItem title"><a href="#">곡성기차마을휴게소점</a> </div>
+										<div class="boardItem register">전라남도</div>
+										<div class="boardItem">전라남도 곡성군 겸면 호남고속도로 49 (가정리, 곡성(하)휴게소)</div>
+										<div class="boardItem">061.363.2766</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
 									</div>
-									<div class="boardRow01 boardBody">
-										<div class="boardItem sorting "><em class="hidden">구분</em>18</div>
-										<div class="boardItem title"> <em class="hidden">제목</em> <a href="javascript:fnDetail('226')" class="boardLink">해피포인트 추가 적립률 변경 안내</a> </div>
-										<div class="boardItem register"><em class="hidden">등록일</em>2024.08.19</div>
-										<div class="boardItem views"><em class="hidden">조회수</em>12</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">480</div>
+										<div class="boardItem title"><a href="#">서면아이온시티점</a> </div>
+										<div class="boardItem register">부산</div>
+										<div class="boardItem">부산광역시 부산진구 서면로 74 (부전동, 아이온시티빌딩)1F</div>
+										<div class="boardItem">051.807.5700</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">479</div>
+										<div class="boardItem title"><a href="#">안동성소병원점</a> </div>
+										<div class="boardItem register">경상북도</div>
+										<div class="boardItem">경상북도 안동시 서동문로 99 안동성소병원 신관 5층</div>
+										<div class="boardItem">054.853.8497</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
+									</div>
+									<div class="boardRow boardBody">
+										<div class="boardItem sorting">478</div>
+										<div class="boardItem title"><a href="#">문래역점</a> </div>
+										<div class="boardItem register">서울</div>
+										<div class="boardItem">서울특별시 영등포구 당산로 57, 1F</div>
+										<div class="boardItem">02.2635.3100</div>
+										<div class="boardItem attach"> <em class="hidden">첨부파일</em> <a href="#" class="btnIcon btnDownload" target="_blank" title="새창 열림">첨부파일 다운로드</a> </div>
 									</div>
 								</div>
-						
-						
-								<div class="paginationWrap"> <a href="javascript:;" role="button" class="firstPage" onclick="pageClick(1)">first page</a> <a href="javascript:;" role="button" class="prevPage" onclick="pageClick(1)">prev page</a><a href="javascript:;" role="button" class="pageNum pageNow" title="현재 페이지" onclick="pageClick(1)">1</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(2)">2</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(3)">3</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(4)">4</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(5)">5</a> <a href="javascript:;" role="button" class="nextPage" onclick="pageClick(6)">next page</a> <a href="javascript:;" role="button" class="lastPage" onclick="pageClick(57)">last page</a></div>
+								<!-- //전체 -->		
+								<div class="irInqTel">∙ 매장 관련 문의  ( 080-731-2027 )</div>	
+								<div class="paginationWrap">	<a href="javascript:;" role="button" class="firstPage" onclick="pageClick(1)">first page</a>	<a href="javascript:;" role="button" class="prevPage" onclick="pageClick(1)">prev page</a><a href="javascript:;" role="button" class="pageNum pageNow" title="현재 페이지" onclick="pageClick(1)">1</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(2)">2</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(3)">3</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(4)">4</a><a href="javascript:;" role="button" class="pageNum" onclick="pageClick(5)">5</a>	<a href="javascript:;" role="button" class="nextPage" onclick="pageClick(6)">next page</a>	<a href="javascript:;" role="button" class="lastPage" onclick="pageClick(7)">last page</a></div>		
 							</div>
-						</div>
-					</div>
+						</div>		
+					</div>				
+				</div>			
 			</div>
-
 		</section>
+
 		<footer>
 			<div class="footerInner">
 				<div class="footerLink">

@@ -24,26 +24,281 @@
 		<p class="skip"><a href="#container">본문 바로가기</a></p>
 		<section id="wrapper" class="wrapper">
 			<!-- header -->
-			<header  id="header" data-include-file="./inc/top_menu.html" class="header-wrap includeJs">
+			<header>
+				<div class="headInner">
+					<a href="/" class="topLogo" title="CAFFE PASCUCCI"></a>
+					<button type="button" class="btnIcon btnBack" onclick="javascript:history.back();">뒤로가기</button>
+					<nav class="nav">
+						<!-- 현재 페이지가 속한 대메뉴에 moveOn 클래스 추가 -->
+						<ul>
+							<li>
+								<a href="/espressobar.html" class="gnb01 ">
+									<span class="txtItem">ESPRESSO BAR</span>
+									<span class="moveWrap">
+									</span>
+								</a>
+								<ul>
+									<li><a href="/espressobar.html">ESPRESSO BAR</a></li>
+									<li><a href="/centro">CENTRO</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="/about.html" class="gnb02 ">
+									<span class="txtItem">CAFFE PASCUCCI</span>
+									<span class="moveWrap">
+									</span>
+								</a>
+								<ul>
+									<li>
+										<a href="/about.html">브랜드 소개</a>
+										<ul>
+											<li><a href="/about.html">전통과 전통의 만남</a></li>
+											<li><a href="#">한국파스쿠찌</a></li>
+											<li><a href="#">이탈리아파스쿠찌</a></li>
+										</ul>
+									</li>
+									<li><a href="#">커피 & 컬쳐</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="/product.html" class="gnb03 ">
+									<span class="txtItem">MENU</span>
+									<span class="moveWrap">
+									</span>
+								</a>
+								<ul>
+									<li>
+										<a href="/product.html">COFFEE</a>
+										<ul>
+											<li><a href="/product.html">Italian coffee</a></li>
+											<li><a href="#">Coffee Variation(Hot)</a></li>
+											<li><a href="#">Coffee Variation(Iced)</a></li>
+											<li><a href="#">Cold Brew</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">BEVERAGE</a>
+										<ul>
+											<li><a href="#">Seasonal</a></li>
+											<li><a href="#">Italian Granita</a></li>
+											<li><a href="#">Tea</a></li>
+											<li><a href="#">Others</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">GELATO</a>
+										<ul>
+											<li><a href="#">Italian Gelato</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">FOOD</a>
+										<ul>
+											<li><a href="#">Cake</a></li>
+											<li><a href="#">ltalian Deli</a></li>
+											<li><a href="#">Bakery</a></li>
+											<li><a href="#">Dessert</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">MD</a>
+										<ul>
+											<li><a href="#">Bean</a></li>
+											<li><a href="#">Tumbler</a></li>
+											<li><a href="#">Mug</a></li>
+											<li><a href="#">Coffee Tool</a></li>
+											<li><a href="#">Tea</a></li>
+											<li><a href="#">Others</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="/news.html" class="gnb04 ">
+									<span class="txtItem">NEWS</span>
+									<span class="moveWrap" aria-hidden="true">
+									</span>
+								</a>
+								<ul>
+									<li><a href="/news.html">공지사항</a></li>
+									<li><a href="#">이벤트</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="gnb05 ">
+									<span class="txtItem">STORE</span>
+									<span class="moveWrap" aria-hidden="true">
+									</span>
+								</a>
+								<ul>
+									<li><a href="#">매장안내</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="headUtils">		
+						<div class="slidedown selectLang" data-options='{
+							"animation": true,
+							"animationSpeed":0.2,
+							"direction": "down"
+						}'>
+							<div class="slidedownTitle">
+								<button type="button" class="slidedownBtn" aria-expanded="false" title="사이트 언어 선택">KOR<span data-text='{"text":"close|open", "show":2}'>open</span></button>
+							</div>
+							<div class="slidedownCont" aria-hidden="true">
+								<ul class="siteLanguage">
+									<li><a href="#" target="_blank" title="새창 열림">ENG</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<!-- button.btnMenuOpen 버튼 클릭 시 open 클래스 추가 -->
+						<div class="menuWrap">
+							<!-- 클릭 시 aria-expanded="true" 변경 -->
+							<button type="button" class="btnMenuOpen" aria-haspopup="true" aria-expanded="false" aria-label="Menu Open"></button>
+							<!-- 클릭 시 aria-hidden="false" 변경 -->
+							<div class="menu" aria-hidden="true">
+								<div class="menuHeader">
+									<a href="/" class="topLogo" title="Hanmi Pharm"></a>
+									<div class="headUtils">
+										<div class="slidedown selectLang" data-options='{
+											"direction": "down"
+										}'>
+											<div class="slidedownTitle">
+												<button type="button" class="slidedownBtn" aria-expanded="false" title="사이트 언어 선택">KOR<span data-text='{"text":"close|open", "show":2}'>open</span></button>
+											</div>
+											<div class="slidedownCont" aria-hidden="true">
+												<ul class="siteLanguage">
+													<li><a href="#" target="_blank" title="새창 열림">ENG</a></li>
+												</ul>
+											</div>
+										</div>
+										<!-- 클릭 시 메뉴 닫힘
+											body의 menuOn 클래스 삭제
+											div.menuWrap의 open 클래스 삭제
+											button.btnMenuOpen의 aria-expanded 속성 false 변경
+											div.menu의 aria-hidden 속성 true 변경
+										-->
+										<button type="button" class="btnMenuClose" aria-label="Menu Close"></button>
+									</div>
+								</div>
+								<div class="inner">
+									<nav class="menuNav">
+										<ul class="menuDepth1">
+											<!-- 클릭하면 active 클래스 추가 -->
+											<li class="">
+												<button type="button">Espresso Bar</button>
+												<ul class="menuDepth2">
+													<li class="inDepth"><a href="/espressobar.html">Espresso Bar</a>
+													</li>
+													<li class="inDepth">
+														<a href="#">Centro</a>
+													</li>
+												</ul>
+											</li>
+											<li class="">
+												<button type="button">Caffe Pascucci</button>
+												<ul class="menuDepth2">
+													<li class="inDepth"><a href="/about.html">브랜드 소개</a>
+														<ul class="menuDepth3">
+															<li><a href="/about.html">전통과 전통의 만남</a></li>
+															<li><a href="#">한국파스쿠찌</a></li>
+															<li><a href="#">이탈리아 파스쿠찌</a></li>		
+														</ul>
+													</li>
+													<li class="inDepth"><a href="#">커피 & 컬쳐 </a>
+													</li>
+												</ul>
+											</li>
+											<li class="">
+												<button type="button">Menu</button>
+												<ul class="menuDepth2">
+													<li class="inDepth"><a href="#">Coffee</a>
+														<ul class="menuDepth3">
+															<li><a href="#">Italian coffee</a></li>
+															<li><a href="#">Coffee Variation(Hot)</a></li>
+															<li><a href="#">Coffee Variation(Iced)</a></li>
+															<li><a href="#">Cold Brew</a></li>
+														</ul>
+													</li>
+													<li class="inDepth"><a href="#">Beverage</a>
+														<ul class="menuDepth3">
+															<li><a href="#">Seasonal</a></li>
+															<li><a href="#">Italian Granita</a></li>
+															<li><a href="#">Tea</a></li>
+															<li><a href="#">Others</a></li>
+														</ul>
+													</li>
+													<li class="inDepth"><a href="#">Gelato</a>
+														<ul class="menuDepth3">
+															<li><a href="#">Italian Gelato</a></li>
+														</ul>
+													</li>
+													<li class="inDepth"><a href="#">Food</a>
+														<ul class="menuDepth3">
+															<li><a href="#">Cake</a></li>
+															<li><a href="#">ltalian Deli</a></li>
+															<li><a href="#">Bakery</a></li>
+															<li><a href="#">Dessert</a></li>
+														</ul>
+													</li>
+													<li class="inDepth"><a href="#">MD</a>
+														<ul class="menuDepth3">
+															<li><a href="#">Bean</a></li>
+															<li><a href="#">Tumbler</a></li>
+															<li><a href="#">Mug</a></li>
+															<li><a href="#">Coffee Tool</a></li>
+															<li><a href="#">Tea</a></li>
+															<li><a href="#">Others</a></li>
+														</ul>
+													</li>
+												</ul>
+												
+											</li>
+											<li class="">
+												<button type="button">News</button>
+												<ul class="menuDepth2">
+													<li><a href="/news.html">공지사항</a></li>			
+													<li><a href="#">이벤트</a></li>
+												</ul>
+											</li>
+											<li class="">
+												<button type="button">Store</button>
+												<ul class="menuDepth2">
+													<li><a href="#" >매장안내</a></li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+									<div class="menuFooter">
+										<p class="copyright">&copy;PASCUCCI.Co.,Ltd. All Rights Reserved.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</header>
 			<!-- //header -->
 			<div id="container" class="container">
 				<div class="pageNavigation">
 					<div class="naviHome"><a href="/" role="button">HOME</a></div>
-					<span class="naviDep1">Business</span>
+					<span class="naviDep1">MENU</span>
 					<div class="naviSub">
-						<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">Product</button><!-- 클릭 시 true로 변경 -->
+						<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">COFFEE</button><!-- 클릭 시 true로 변경 -->
 						<ul class="subList">
-							<li><a href="/business/open-Innovation.hm" role="button" aria-current="true">오픈 이노베이션</a></li>
-							<li><a href="/business/cmdo.hm" role="button" aria-current="true">CDMO</a></li>
-							<li><a href="/business/product/finder/list.hm" role="button">Product</a></li>
+							<li><a href="#" role="button" aria-current="true">BEVERAGE</a></li>
+							<li><a href="#" role="button" aria-current="true">GELATO</a></li>
+							<li><a href="#" role="button">FOOD</a></li>
+							<li><a href="#" role="button">MD</a></li>
 						</ul>
 					</div>
 					<div class="naviDep3">
-						<button type="button" class="naviBtDep3" title="3rd depth menu" aria-expanded="false">제품검색</button><!-- 클릭 시 true로 변경 -->
+						<button type="button" class="naviBtDep3" title="3rd depth menu" aria-expanded="false">Italian Coffee</button><!-- 클릭 시 true로 변경 -->
 						<ul class="subList">
-							<li><a href="/business/product/finder/list.hm" role="button" aria-current="true">제품검색</a></li>
-							<li><a href="/business/product/pharmacy/search.hm" role="button">판매약국 찾기</a></li>
+							<li><a href="#" role="button" aria-current="true">Coffee Variation(Hot)</a></li>
+							<li><a href="#" role="button">Coffee Variation(Iced)</a></li>
+							<li><a href="#" role="button">Cold Brew</a></li>
 						</ul>
 					</div>
 				</div>
@@ -51,16 +306,23 @@
 				<div id="contents" class="contents">
 					<!-- 230804 삭제
 					<h1 class="hidden">제품 검색</h1> -->
-					<div class="contModule topVisual">
-						<div class="contInner">
+					<div class="contInner">
 							<!-- 230804 헤딩레벨 수정 -->
-							<h1 class="titDep01">
-								<p class="pc">COFFEE<span class="titEnd">.</span></p>
-								<p class="mo">COFFEE<span class="titEnd">.</span></p>
-							</h1>
+						<h1 class="titDep01">
+							<p class="pc">COFFEE<span class="titEnd">.</span></p>
+							<p class="mo">COFFEE<span class="titEnd">.</span></p>
+						</h1>
 						</div>
-					</div>
 					<div class="contModule contProduct moduleSearch">
+						<div class=" jsTab tabType01">
+							<ul class="tabType" role="tablist">
+								<li role="presentation" class="active"><button type="button" aria-selected="true" role="tab">COFFEE</button></li>
+								<li role="presentation"><button type="button" aria-selected="false" role="tab">BEVERAGE</button></li>
+								<li role="presentation"><button type="button" aria-selected="false" role="tab">GELATO</button></li>
+								<li role="presentation"><button type="button" aria-selected="false" role="tab">FOOD</button></li>
+								<li role="presentation"><button type="button" aria-selected="false" onclick="location.href='#'" role="tab">MD</button></li>
+							</ul>
+						</div>
 						<div class="contInner">
 							 <div class="noData" id="noData" style="display:none;">
 								<p class="noDataTxt">등록된 게시물이 없습니다.</p>
@@ -121,284 +383,6 @@
 				<!-- // contents -->
 			</div>
 			<!-- //container -->
-			<!-- 검색 필터 popup(모바일) -->
-			<section id="popup-filter" class="layerPopup layerBottom pcHidden" role="dialog" tabindex="0">
-				<div class="popupWrap popupFilter">
-					<h2 class="popupTit">필터</h2>
-					<div class="popupContent">
-						<div class="popupScroll">
-							<div class="searchRow">
-								<span class="filterTit subject">전문과별 검색</span>
-								<ul class="inputWrap selector">
-								  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000014_mo" value="000014" name="searchDepardCodeRadio_mo" data-searchDepardCode="000014"><label for="searchDepardCode_000014_mo">가정의학과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000001_mo" value="000001" name="searchDepardCodeRadio_mo" data-searchDepardCode="000001"><label for="searchDepardCode_000001_mo">내과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000006_mo" value="000006" name="searchDepardCodeRadio_mo" data-searchDepardCode="000006"><label for="searchDepardCode_000006_mo">비뇨기과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000008_mo" value="000008" name="searchDepardCodeRadio_mo" data-searchDepardCode="000008"><label for="searchDepardCode_000008_mo">산부인과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000005_mo" value="000005" name="searchDepardCodeRadio_mo" data-searchDepardCode="000005"><label for="searchDepardCode_000005_mo">소아과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000013_mo" value="000013" name="searchDepardCodeRadio_mo" data-searchDepardCode="000013"><label for="searchDepardCode_000013_mo">신경과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000009_mo" value="000009" name="searchDepardCodeRadio_mo" data-searchDepardCode="000009"><label for="searchDepardCode_000009_mo">안과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000002_mo" value="000002" name="searchDepardCodeRadio_mo" data-searchDepardCode="000002"><label for="searchDepardCode_000002_mo">외과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000010_mo" value="000010" name="searchDepardCodeRadio_mo" data-searchDepardCode="000010"><label for="searchDepardCode_000010_mo">이비인후과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000015_mo" value="000015" name="searchDepardCodeRadio_mo" data-searchDepardCode="000015"><label for="searchDepardCode_000015_mo">일반의원</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000011_mo" value="000011" name="searchDepardCodeRadio_mo" data-searchDepardCode="000011"><label for="searchDepardCode_000011_mo">정신건강의학과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000007_mo" value="000007" name="searchDepardCodeRadio_mo" data-searchDepardCode="000007"><label for="searchDepardCode_000007_mo">치과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000003_mo" value="000003" name="searchDepardCodeRadio_mo" data-searchDepardCode="000003"><label for="searchDepardCode_000003_mo">피부과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000236_mo" value="000236" name="searchDepardCodeRadio_mo" data-searchDepardCode="000236"><label for="searchDepardCode_000236_mo">혈액종양내과</label></li>
-										  
-										  <li class="radio"><input type="radio" id="searchDepardCode_000237_mo" value="000237" name="searchDepardCodeRadio_mo" data-searchDepardCode="000237"><label for="searchDepardCode_000237_mo">호흡기내과</label></li>
-										  
-								</ul>
-							</div>
-							<div class="searchRow">
-								<span class="filterTit initial">초성 검색</span>
-								<ul class="inputWrap selector small">
-											   <li class="radio"><input type="radio" id="initial01_mo" name="searchFirstCharRadio_mo" value="ㄱ" data-searchFirstChar="ㄱ"><label for="initial01_mo">ㄱ</label></li>
-											<li class="radio"><input type="radio" id="initial03_mo" name="searchFirstCharRadio_mo" value="ㄴ" data-searchFirstChar="ㄴ"><label for="initial03_mo">ㄴ</label></li>
-											<li class="radio"><input type="radio" id="initial04_mo" name="searchFirstCharRadio_mo" value="ㄷ" data-searchFirstChar="ㄷ"><label for="initial04_mo">ㄷ</label></li>
-											<li class="radio"><input type="radio" id="initial06_mo" name="searchFirstCharRadio_mo" value="ㄹ" data-searchFirstChar="ㄹ"><label for="initial06_mo">ㄹ</label></li>
-											<li class="radio"><input type="radio" id="initial07_mo" name="searchFirstCharRadio_mo" value="ㅁ" data-searchFirstChar="ㅁ"><label for="initial07_mo">ㅁ</label></li>
-											<li class="radio"><input type="radio" id="initial08_mo" name="searchFirstCharRadio_mo" value="ㅂ" data-searchFirstChar="ㅂ"><label for="initial08_mo">ㅂ</label></li>
-											<li class="radio"><input type="radio" id="initial10_mo" name="searchFirstCharRadio_mo" value="ㅅ" data-searchFirstChar="ㅅ"><label for="initial10_mo">ㅅ</label></li>
-											<li class="radio"><input type="radio" id="initial12_mo" name="searchFirstCharRadio_mo" value="ㅇ" data-searchFirstChar="ㅇ"><label for="initial12_mo">ㅇ</label></li>
-											<li class="radio"><input type="radio" id="initial13_mo" name="searchFirstCharRadio_mo" value="ㅈ" data-searchFirstChar="ㅈ"><label for="initial13_mo">ㅈ</label></li>
-											<li class="radio"><input type="radio" id="initial15_mo" name="searchFirstCharRadio_mo" value="ㅊ" data-searchFirstChar="ㅊ"><label for="initial15_mo">ㅊ</label></li>
-											<li class="radio"><input type="radio" id="initial16_mo" name="searchFirstCharRadio_mo" value="ㅋ" data-searchFirstChar="ㅋ"><label for="initial16_mo">ㅋ</label></li>
-											<li class="radio"><input type="radio" id="initial17_mo" name="searchFirstCharRadio_mo" value="ㅌ" data-searchFirstChar="ㅌ"><label for="initial17_mo">ㅌ</label></li>
-											<li class="radio"><input type="radio" id="initial18_mo" name="searchFirstCharRadio_mo" value="ㅍ" data-searchFirstChar="ㅍ"><label for="initial18_mo">ㅍ</label></li>
-											<li class="radio"><input type="radio" id="initial19_mo" name="searchFirstCharRadio_mo" value="ㅎ" data-searchFirstChar="ㅎ"><label for="initial19_mo">ㅎ</label></li>
-								</ul>
-							</div>
-							<div class="searchRow">
-								<span class="filterTit medicine">제제별 검색</span>
-								<ul class="inputWrap selector">
-								 
-											<li class="radio"><input type="radio" id="medicine_1_mo" name="searchCategoryRadio_mo" value="전문의약품" data-searchCategory="전문의약품"><label for="medicine_1_mo">전문의약품</label></li>
-											
-											<li class="radio"><input type="radio" id="medicine_2_mo" name="searchCategoryRadio_mo" value="일반의약품" data-searchCategory="일반의약품"><label for="medicine_2_mo">일반의약품</label></li>
-											
-											<li class="radio"><input type="radio" id="medicine_3_mo" name="searchCategoryRadio_mo" value="의료기기" data-searchCategory="의료기기"><label for="medicine_3_mo">의료기기</label></li>
-											
-											<li class="radio"><input type="radio" id="medicine_4_mo" name="searchCategoryRadio_mo" value="건강기능식품" data-searchCategory="건강기능식품"><label for="medicine_4_mo">건강기능식품</label></li>
-											
-											<li class="radio"><input type="radio" id="medicine_5_mo" name="searchCategoryRadio_mo" value="기타" data-searchCategory="기타"><label for="medicine_5_mo">기타</label></li>
-											
-								</ul>
-							</div>
-							<a href="http://www.health.kr/searchIdentity/search.asp" class="btnMedicineLook" target="_blank"  title="새창 열림" >외형별 검색</a>
-						</div>
-					</div>
-					<div class="popupBtnWrap">
-						<button type="reset" class="btnIcon btnFilterReset2" onclick="searchInit()">초기화</button>
-						<button type="button" class="popupClose">팝업 닫기</button>
-					</div>
-	
-				</div>
-			</section>
-			<form id="productDetail" method="post">
-				<input type="hidden" id="prodSeq" name="prodSeq">
-				<input type="hidden" id="page" name="page">
-				<input type="hidden" id="productDetailSearchWord" name="searchWord">
-				<input type="hidden" id="productDetailSearchDepardCode" name="searchDepardCode">
-				<input type="hidden" id="productDetailSearchFirstChar" name="searchFirstChar">
-				<input type="hidden" id="productDetailSearchCategory" name="searchCategoryWord">
-			</form>
-			<form id="findPharmacy" method="post">
-				<input type="hidden" id="productNm" name="productNm">
-			</form>
-			<!-- //검색 필터 popup(모바일) -->
-			<script>
-			var init_page =0;
-			var totalPage =0;
-			var page =1;
-			function search(){
-				pageClick(1);
-			}
-			
-			function productDetail(prodSeq){
-				
-				var searchDepardCode ="";
-				if($("input:radio[name='searchDepardCodeRadio']:checked").length > 0){
-					searchDepardCode=$("input:radio[name='searchDepardCodeRadio']:checked").val();
-				}
-				var searchFirstChar ="";
-				if($("input:radio[name='searchFirstCharRadio']:checked").length > 0){
-					searchFirstChar=$("input:radio[name='searchFirstCharRadio']:checked").val();
-				}
-				var searchCategory ="";
-				if($("input:radio[name='searchCategoryRadio']:checked").length > 0){
-					searchCategory=$("input:radio[name='searchCategoryRadio']:checked").val();
-				}
-				var searchWord = $("#searchWord").val();
-				
-				$("#page").val(page);
-				$("#productDetailSearchWord").val(searchWord);
-				$("#productDetailSearchDepardCode").val(searchDepardCode);
-				$("#productDetailSearchFirstChar").val(searchFirstChar);
-				$("#productDetailSearchCategory").val(searchCategory);
-				
-				$("#prodSeq").val(prodSeq);
-				$("#productDetail").attr("action","/business/product/finder/detail-"+prodSeq+".hm");
-				$("#productDetail").submit();
-			}
-			function findPharmacy(productNm){
-				$("#productNm").val(productNm);
-				$("#findPharmacy").attr("action","/business/product/pharmacy/search.hm");
-				$("#findPharmacy").submit();
-			}
-			function pageClick(page){
-				var searchDepardCode ="";
-				if($("input:radio[name='searchDepardCodeRadio']:checked").length > 0){
-					searchDepardCode=$("input:radio[name='searchDepardCodeRadio']:checked").val();
-				}
-				var searchFirstChar ="";
-				if($("input:radio[name='searchFirstCharRadio']:checked").length > 0){
-					searchFirstChar=$("input:radio[name='searchFirstCharRadio']:checked").val();
-				}
-				var searchCategory ="";
-				if($("input:radio[name='searchCategoryRadio']:checked").length > 0){
-					searchCategory=$("input:radio[name='searchCategoryRadio']:checked").val();
-				}
-				var searchWord = $("#searchWord").val();
-				
-				history.pushState({page:page,searchWord:searchWord,searchDepardCode:searchDepardCode,searchFirstChar:searchFirstChar,searchCategory:searchCategory}, "제품 검색 | Hanmi", "");
-				
-				goPage(page,searchWord,searchDepardCode,searchFirstChar,searchCategory);
-			}
-			function goPage(page_val,searchWord,searchDepardCode,searchFirstChar,searchCategory){
-				page=page_val;
-				$.post("./listAjax.hm",
-				{	
-					searchWord:searchWord,
-					searchDepardCode:searchDepardCode,
-					searchFirstChar:searchFirstChar,
-					searchCategoryWord:searchCategory,
-					page:page_val
-				},
-				function(data){
-					if(data.is_ok=="ok"){
-						var size=data.totalcount;
-						var list=data.list;
-						$("#productListCount").html(size+"개")
-						if(size>0){
-							$("#noData").hide();
-							$("#productResult").show();
-							$("#productList").html("");
-							$(".paginationWrap").remove();
-							for(var i=0;i<data.list.length;i++){
-								var arr = data.list[i].sysFileNm.split("|");
-								data.list[i].sysFile=arr[arr.length-1];
-								if(data.list[i].sysFile == ''){
-									data.list[i].sysFile = 'img_symbol.jpg';
-								}
-								$("#productList").append(makeHtml("productListhtml",data.list[i]));
-							}
-							$("#productResult").append(data.pagingStr);
-							
-						}else{
-							$("#noData").show();
-							$("#productResult").hide();
-						}
-					}
-					
-				},"json");
-			}
-			function searchInit(){
-				$("input:radio[name='searchFirstCharRadio_mo']").each(function(i,ob){
-					$(ob).prop("checked",false);
-				});
-				$("input:radio[name='searchFirstCharRadio']").each(function(i,ob){
-					$(ob).prop("checked",false);
-				});
-				$("input:radio[name='searchDepardCodeRadio_mo']").each(function(i,ob){
-					$(ob).prop("checked",false);
-				});
-				$("input:radio[name='searchDepardCodeRadio']").each(function(i,ob){
-					$(ob).prop("checked",false);
-				});
-				$("input:radio[name='searchCategoryRadio_mo']").each(function(i,ob){
-					$(ob).prop("checked",false);
-				});
-				$("input:radio[name='searchCategoryRadio']").each(function(i,ob){
-					$(ob).prop("checked",false);
-				});
-				//$("#searchWord").val("");
-				search();
-			}
-			$(document).ready(function(event) {
-				$("input:radio[name='searchFirstCharRadio_mo']").click(function(e){
-					var val=$("input:radio[name='searchFirstCharRadio_mo']:checked").val();
-					$("[data-searchFirstChar='"+val+"']").prop("checked",true);
-					search();
-				});
-				$("input:radio[name='searchFirstCharRadio']").click(function(e){
-					var val=$("input:radio[name='searchFirstCharRadio']:checked").val();
-					$("[data-searchFirstChar='"+val+"']").prop("checked",true);
-					search();
-					
-				});
-				
-				$("input:radio[name='searchDepardCodeRadio_mo']").click(function(e){
-					var val=$("input:radio[name='searchDepardCodeRadio_mo']:checked").val();
-					$("[data-searchDepardCode='"+val+"']").prop("checked",true);
-					search();
-					
-				});
-				$("input:radio[name='searchDepardCodeRadio']").click(function(e){
-					var val=$("input:radio[name='searchDepardCodeRadio']:checked").val();
-					$("[data-searchDepardCode='"+val+"']").prop("checked",true);
-					search();
-					
-				});
-				$("input:radio[name='searchCategoryRadio_mo']").click(function(e){
-					var val=$("input:radio[name='searchCategoryRadio_mo']:checked").val();
-					$("[data-searchCategory='"+val+"']").prop("checked",true);
-					search();
-					
-				});
-				$("input:radio[name='searchCategoryRadio']").click(function(e){
-					var val=$("input:radio[name='searchCategoryRadio']:checked").val();
-					$("[data-searchCategory='"+val+"']").prop("checked",true);
-					search();
-					
-				});
-				$("#searchWord").keyup(function(event){
-					var keyCode=event.keyCode?event.keyCode:event.which;
-					if(keyCode==13){
-						search();
-					}
-				});
-				
-					search();
-				
-				
-			});
-			/** 검색 뒤로가기
-			*/
-			$(window).on('popstate', function(event) {
-				  var data = event.originalEvent.state;
-				  if(data != null){
-					  $("#searchWord").val(data.searchWord);
-					  $("[data-searchFirstChar='"+data.searchFirstChar+"']").prop("checked",true);
-					  $("[data-searchDepardCode='"+data.searchDepardCode+"']").prop("checked",true);
-					  $("[data-searchCategory='"+data.searchCategory+"']").prop("checked",true);
-					  goPage(data.page,data.searchWord,data.searchDepardCode,data.searchFirstChar,data.searchCategory);
-				  }
-			});
-			</script>
 				<script>
 				/**
 				* 개발 공통에 해당되는  스크립트 펑션 영역
@@ -534,7 +518,54 @@
 	</script>
 
 		</section>
-		<footer id="footer" data-include-file="./inc/footer.html" class="footer-wrap includeJs">
+		<footer>
+			<div class="footerInner">
+				<div class="footerLink">
+					<ul class="policyList">
+						<li><a href="/about/investor-relations/financial-info/announce/list.hm">전자공고</a></li>
+						<li><a href="/privacy-pollcy.hm">개인정보처리방침</a></li>
+					</ul>
+			<!--// 230808 링크 마크업 수정 -->
+					<!-- 230808 family site 마크업 수정 -->
+					<div class="slidedown selectFamily" data-options='{
+						"animation": true,
+						"animationSpeed":0.4,
+						"direction": "up"
+					}'>
+						<div class="slidedownTitle">
+							<button type="button" class="slidedownBtn" aria-expanded="false">Family Site<span data-text='{"text":"close|open", "show":2}'>open</span></button>
+						</div>
+						<div class="slidedownCont" aria-hidden="true">
+							<ul class="familyList">
+								<li><a href="#" target="_blank" title="새창 열림">해피포인트</a></li>
+								<li><a href="#" target="_blank" title="새창 열림">파리바게뜨</a></li>
+								<li><a href="#" target="_blank" title="새창 열림">파리크라상</a></li>
+								<li><a href="#" target="_blank" title="새창 열림">베스킨라빈스</a></li>
+								<li><a href="#" target="_blank" title="새창 열림">파스쿠찌 이탈리아</a></li>
+								<li><a href="#" target="_blank" title="새창 열림">던킨</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--// 230808 family site 마크업 수정 -->
+				</div>
+			
+				<div class="footerInfo">
+					<p class="footerTxt">(주) 파리크라상 사업자등록 번호: 129-81-07244</p>
+					<address class="footerTxt addressTxt">경기도 성남시 중원구 사기막골로31번길 18</address>
+					<div class="telWrap">
+						<span class="footerTxt telTxt">고객상담센터 080-731-2027</span>
+						<span class="footerTxt telTxt">고객상담센터 080-731-2027</span>
+					</div>
+					<p class="copyrightTxt">ALL RIGHTS RESERVED ⓒ 2024 THE PASCUCCI, PARIS CROISSANT CO., LTD.</p>
+					<div class="waMark">
+						<a href="#" title="국가 공인 인증기관 : 웹와치">
+							<img src="/images/foot_logo.png" alt="" style="width: 70px;" >
+						</a>
+					</div>
+				</div>
+			
+				<button type="button" class="btnTop" title="페이지 상단으로 이동"></button>
+			</div>
 		</footer>
 		<script src="/js/main.js"></script>
 	</body>
