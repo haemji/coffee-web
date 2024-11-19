@@ -2190,8 +2190,8 @@ html[lang=en] .contProduct .productResult{margin-top:100px}
 .contProduct .productResult .productList .productItem{position:relative;width:calc(33.33% - 20px)}
 .contProduct .productResult .productList .productItem .productLink{overflow:hidden;position:relative;display:block;border-radius:10px}
 .contProduct .productResult .productList .productItem .productLink .productThumb{display:block;position:relative;height:454px}
-.contProduct .productResult .productList .productItem .productLink .productThumb img{position:absolute;left:50%;top:90px;width:380px;height:272px;transform:translateX(-50%);-o-object-fit:cover;object-fit:cover}
-.contProduct .productResult .productList .productItem .productLink .productInfo{border-top:1px solid #C5C5C5;padding:30px}
+.contProduct .productResult .productList .productItem .productLink .productThumb img{position:absolute;left:50%;width:380px;height:100%;transform:translateX(-50%);-o-object-fit:cover;object-fit:cover}
+.contProduct .productResult .productList .productItem .productLink .productInfo{border-top:1px solid #C5C5C5;padding:30px; position: relative;}
 .contProduct .productResult .productList .productItem .productLink .productInfo .medicineType{display:inline-block;font-size:1.6rem;line-height:1.625;letter-spacing:-0.02em;font-weight:500;border-radius:28px;padding:1px 12px;}
 .contProduct .productResult .productList .productItem .productLink .productInfo .medicineType,
 .contProduct .productResult .productList .productItem .productLink .productInfo .medicineType.tyEtc{background:rgba(9,17,41,0.06);color:#091129}
@@ -2202,8 +2202,9 @@ html[lang=en] .contProduct .productResult{margin-top:100px}
 .contProduct .productResult .productList .productItem .productLink .productInfo .medicineType.ty4{background:rgba(116,123,229,0.06);color:#AA986C;}
 .contProduct .productResult .productList .productItem .productLink .productInfo .medicineType.ty4 img{width: 30px; margin-top: 5.5px;}
 .contProduct .productResult .productList .productItem .productLink .productInfo .medicineType.ty5{background:rgba(92,187,200,0.06);color:#3E9EAA}
+.contProduct .productResult .productList .productItem .productLink .productInfo .icon{ top: -430px;left: 30px; position: absolute;}
 .contProduct .productResult .productList .productItem .productLink .productInfo .medicineName{font-size:2.8rem;letter-spacing:-0.005em;line-height:1.5;margin-top:10px;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2;max-height:84px}
-.contProduct .productResult .productList .productItem .productLink .productInfo .medicineEffect{display:none;position:absolute;bottom:180px;left:50px;right:50px;font-size:2.8rem;line-height:1.5;letter-spacing:-0.005em;font-weight:700;text-align:center}
+.contProduct .productResult .productList .productItem .productLink .productInfo .medicineEffect{display:none;position:absolute;bottom:160px;left:50px;right:50px;font-size:1.8rem;line-height:1.5;letter-spacing:-0.005em;font-weight:600;text-align:center}
 .contProduct .productResult .productList .productItem .productLink+.viewDetail{display:none;background:#000;color:#fff;font-size:2rem;line-height:1.7;letter-spacing:-0.005em;padding:23px 0;text-align:center;border-radius:0 0 10px 10px}
 .contProduct .productResult .productList .productItem .productLink:hover,
 .contProduct .productResult .productList .productItem .productLink:focus{box-shadow:10px 10px 30px rgba(0,0,0,0.1);border-radius:10px}
@@ -2348,7 +2349,7 @@ html[lang=en] .contProduct .productDetail.press{margin-top:100px}
 	.contProduct .productResult .productList .productItem{display:block;width:100%}
 	.contProduct .productResult .productList .productItem .productLink{display:block;border-radius:0}
 	.contProduct .productResult .productList .productItem .productLink .productThumb{height:34.2rem}
-	.contProduct .productResult .productList .productItem .productLink .productThumb img{top:5rem;width:28.6rem;height:21.4rem}
+	.contProduct .productResult .productList .productItem .productLink .productThumb img{width:28.6rem;height:100%;}
 	.contProduct .productResult .productList .productItem .productLink .productInfo{border-top:1px solid #E6E6E6;padding:1.6rem 0 0}
 	.contProduct .productResult .productList .productItem .productLink .productInfo .medicineType{font-size:1.4rem;line-height:1.57;border-radius:2.4rem;padding:1px 1rem}
 	.contProduct .productResult .productList .productItem .productLink .productInfo .medicineName{font-size:2rem;letter-spacing:-0.02em;font-weight:600;margin-top:.8rem;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2;max-height:6rem}

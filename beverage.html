@@ -213,9 +213,9 @@
 											<li class="">
 												<button type="button">Menu</button>
 												<ul class="menuDepth2">
-													<li class="inDepth"><a href="#">Coffee</a>
+													<li class="inDepth"><a href="/product.html">Coffee</a>
 														<ul class="menuDepth3">
-															<li><a href="#">Italian coffee</a></li>
+															<li><a href="/product.html">Italian coffee</a></li>
 															<li><a href="#">Coffee Variation(Hot)</a></li>
 															<li><a href="#">Coffee Variation(Iced)</a></li>
 															<li><a href="#">Cold Brew</a></li>
@@ -223,7 +223,7 @@
 													</li>
 													<li class="inDepth"><a href="/beverage.html">Beverage</a>
 														<ul class="menuDepth3">
-															<li><a href="/beverage.html">Seasonal</a></li>
+															<li><a href="#">Seasonal</a></li>
 															<li><a href="#">Italian Granita</a></li>
 															<li><a href="#">Tea</a></li>
 															<li><a href="#">Others</a></li>
@@ -285,20 +285,20 @@
 					<div class="naviHome"><a href="/" role="button">HOME</a></div>
 					<span class="naviDep1">MENU</span>
 					<div class="naviSub">
-						<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">COFFEE</button><!-- 클릭 시 true로 변경 -->
+						<button type="button" class="naviBt" title="2nd depth menu" aria-expanded="false">BEVERAGE</button><!-- 클릭 시 true로 변경 -->
 						<ul class="subList">
-							<li><a href="#" role="button" aria-current="true">BEVERAGE</a></li>
+							<li><a href="#" role="button" aria-current="true">COFFEE</a></li>
 							<li><a href="#" role="button" aria-current="true">GELATO</a></li>
 							<li><a href="#" role="button">FOOD</a></li>
 							<li><a href="#" role="button">MD</a></li>
 						</ul>
 					</div>
 					<div class="naviDep3">
-						<button type="button" class="naviBtDep3" title="3rd depth menu" aria-expanded="false">Italian Coffee</button><!-- 클릭 시 true로 변경 -->
+						<button type="button" class="naviBtDep3" title="3rd depth menu" aria-expanded="false">Seasonal</button><!-- 클릭 시 true로 변경 -->
 						<ul class="subList">
-							<li><a href="#" role="button" aria-current="true">Coffee Variation(Hot)</a></li>
-							<li><a href="#" role="button">Coffee Variation(Iced)</a></li>
-							<li><a href="#" role="button">Cold Brew</a></li>
+							<li><a href="#" role="button" aria-current="true">Italian Granita</a></li>
+							<li><a href="#" role="button">Tea</a></li>
+							<li><a href="#" role="button">Others</a></li>
 						</ul>
 					</div>
 				</div>
@@ -309,15 +309,15 @@
 					<div class="contInner">
 							<!-- 230804 헤딩레벨 수정 -->
 						<h1 class="titDep01">
-							<p class="pc">COFFEE<span class="titEnd">.</span></p>
-							<p class="mo">COFFEE<span class="titEnd">.</span></p>
+							<p class="pc">BEVERAGE<span class="titEnd">.</span></p>
+							<p class="mo">BEVERAGE<span class="titEnd">.</span></p>
 						</h1>
 						</div>
 					<div class="contModule contProduct moduleSearch">
 						<div class=" jsTab tabType01">
 							<ul class="tabType" role="tablist">
-								<li role="presentation" class="active"><button type="button" aria-selected="true" role="tab" onclick="location.href='./product.html'">COFFEE</button></li>
-								<li role="presentation"><button type="button" aria-selected="false" role="tab"  onclick="location.href='./beverage.html'">BEVERAGE</button></li>
+								<li role="presentation"><button type="button" aria-selected="false" role="tab" onclick="location.href='./product.html'">COFFEE</button></li>
+								<li role="presentation" class="active"><button type="button" aria-selected="true" role="tab" onclick="location.href='./beverage.html'">BEVERAGE</button></li>
 								<li role="presentation"><button type="button" aria-selected="false" role="tab">GELATO</button></li>
 								<li role="presentation"><button type="button" aria-selected="false" role="tab">FOOD</button></li>
 								<li role="presentation"><button type="button" aria-selected="false" onclick="location.href='#'" role="tab">MD</button></li>
@@ -329,6 +329,90 @@
 							</div>
 							<div class="productResult" id="productResult">
 								<ul class="productList" id="productList">
+									<li class="productItem">
+										<a href="#" class="productLink">
+											<figure class="productThumb"><img src="./images/beverage/티라미수스타치오라떼_185823.jpg" alt="AT-Patch" onerror="this.src=''"></figure>
+											<div class="productInfo">
+												<div class="icon"><img src="images/beverage/season_icon.png" alt="xmas"></div>
+												<span class="medicineType ty4">
+													<img src="./images/bg_leaf_left.png" alt="">
+													시그니처
+													<img src="./images/bg_leaf_right.png" alt="">
+												</span>
+												<div class="medicineName">티라미수 피스타치오 라떼</div>
+												<span class="medicineEffect">Tiramisu Pistachio Latte</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
+							
+									<li class="productItem">
+										<a href="#" class="productLink">
+											<figure class="productThumb"><img src="./images/beverage/아이스티라미수피스타치오라떼_185833.jpg" alt="HANMI COVID-19 Quick TEST" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<div class="icon"><img src="images/beverage/season_icon.png" alt="xmas"></div>
+												<span class="medicineType ty4"></span>
+												<div class="medicineName">아이스 티라미수 피스타치오 라떼</div>
+												<span class="medicineEffect">Iced Tiramisu Pistachio Latte</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
+							
+									<li class="productItem">
+										<a href="javascript:productDetail(6644);" class="productLink">
+											<figure class="productThumb"><img src="/images/beverage/윈터레몬티_185841.jpg" alt="Kardia Mobile 6L" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<div class="icon"><img src="images/beverage/season_icon.png" alt="xmas"></div>
+												<span class="medicineType ty4"></span>
+												<div class="medicineName">윈터 레몬체리 티</div>
+												<span class="medicineEffect">Winter Lemon Cherry Tea</span><!-- 호버 시 노출 --> 
+											</div>
+							
+										</a>
+									</li>
+									<li class="productItem">
+										<a href="#" class="productLink">
+											<figure class="productThumb"><img src="/images/beverage/아이스윈터레몬체리티_185939.jpg" alt="AT-Patch" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<div class="icon"><img src="images/beverage/season_icon.png" alt="xmas"></div>
+												<span class="medicineType ty4">
+													<img src="./images/bg_leaf_left.png" alt="">
+													시그니처
+													<img src="./images/bg_leaf_right.png" alt="">
+												</span>
+												<div class="medicineName">아이스 윈터 레몬체리 티</div>
+												<span class="medicineEffect">Iced Winter Lemon Cherry Tea</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
+							
+									<li class="productItem">
+										<a href="#" class="productLink">
+											<figure class="productThumb"><img src="./images/beverage/브라우니스노잉라떼_185849.jpg" alt="HANMI COVID-19 Quick TEST" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												<div class="icon"><img src="images/beverage/season_icon.png" alt="xmas"></div>
+												<span class="medicineType ty4"></span>
+												<div class="medicineName">브라우니 스노잉 라떼</div>
+												<span class="medicineEffect">Brownie Snowing Latte</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
+							
+									<li class="productItem">
+										<a href="javascript:productDetail(6644);" class="productLink">
+											<figure class="productThumb"><img src="/images/beverage/마시멜로모카오트_18590.jpg" alt="Kardia Mobile 6L" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
+											<div class="productInfo">
+												
+												<span class="medicineType ty4"></span>
+												<div class="medicineName">마시멜로 모카 오트</div>
+												<span class="medicineEffect">Marshmallow Mocha Oat</span><!-- 호버 시 노출 -->
+											</div>
+							
+										</a>
+									</li>
 									<li class="productItem">
 										<a href="#" class="productLink">
 											<figure class="productThumb"><img src="./images/product/이탈리안아포가또_1562 (1).jpg" alt="AT-Patch" onerror="this.src='/images/company/img_symbol.jpg'"></figure>
